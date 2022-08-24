@@ -1,0 +1,11 @@
+Write-Output "Powershell script to keep MS Teams status set to available loaded OK."
+while($true)
+{
+	Start-Sleep -m 60000
+	[Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(1000, 500)
+	Start-Sleep -m 500
+	$SendMouseClick::mouse_event(0x00000002, 0, 0, 0, 0)
+	Start-Sleep -m 500
+	$SendMouseClick::mouse_event(0x00000004, 0, 0, 0, 0)
+	Start-Sleep -m 500
+}
